@@ -351,30 +351,33 @@ template {
 }
 
 /* --------------MY CODE STYLES ----------------------*/
+
 * {
 	box-sizing: border-box;
 }
-
+@media(max-width: 1440px) {
 body {
 	background-image: url("./images/bg-pattern-desktop.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
 .card {
 	width: 75%;
-	margin: 2% auto;
+	margin: 5% auto;
 	box-shadow: 10px 10px 15px 20px lightgrey;
 }
 
 .content {
 	display: flex;
 	margin-bottom: -1%;
+	
 }
 
 .text {
-	padding: 10%;
+	padding-top: 10%;
+	padding-left: 1%;
+	padding-right: 10%;
 	text-justify: left;
 	width: 70%;
 }
@@ -382,7 +385,7 @@ body {
 .top-icon {
 	width: 40%;
 	margin-top: -15%;
-	margin-bottom: 25%;
+	margin-bottom: 10%;
 }
 .light-title {
 	color: hsl(0, 36%, 70%);
@@ -424,9 +427,52 @@ body {
 }
 
 .imgDiv {
-	width: 60%;
-	margin: 1%;
+	width: 75%;
+	height: 70vh;
+	margin-right: -66%;
+	margin-top: -20%;
+	float: right;
 }
 img {
 	width: 100%;
+	height: 100%;
+}
+
+}
+
+@media(max-width:375px){
+	.card{
+		height: 900px;
+		width: 98%;
+		margin: 0% auto;
+	
+	}
+	.content {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.text{
+		margin: 0 auto;
+		
+	}
+	.comment{
+		margin-top: 200%;
+	}
+	
+	.imgDiv{
+		height: 40vh;
+		width: 140%;
+		margin-top: 5%;
+		margin-right: -30%;
+	}
+	
+	.input{
+		font-size: 20px;
+		margin-bottom: 8%;
+	}
+	
+	.button{
+		height: 38px;
+	}
 }
