@@ -29,9 +29,9 @@
 					</div>
 					<div class="imgDiv">
 						<img src="./images/hero-desktop.jpg" className="hero" alt="hero" />
-          </div>
-          
-					<section class="comment" >
+					</div>
+
+					<section class="comment">
 						<h1 class="light-title">WE'RE</h1>
 						<h1 class="dark-title">COMING <br />SOON</h1>
 
@@ -40,9 +40,18 @@
 							with announcements and our launch deals.
 						</p>
 					</section>
-					<form >
-						<input require placeholder="Email Address" type="email" value=' '} class="input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
-						<button class="button" onClick={handleClick}><img src="./images/icon-arrow.svg" alt="submit" class="submit" /></button>
+					<form>
+						<input
+							require
+							placeholder="Email Address"
+							type="email"
+							value=" "
+							id="input"
+							pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+						/>
+						<button class="button" onClick="myFunction()">
+							<img src="./images/icon-arrow.svg" alt="submit" class="submit" />
+						</button>
 					</form>
 				</div>
 			</div>
@@ -54,23 +63,6 @@
 				</p>
 			</footer>
 		</section>
-  </body>
-  <script>
-	const inside=document.getElementByTagName('input');
-	const input = document.getElementById('#text1');
-	const input2 = document.getElementById('#text2');
-    
-  const  myFunction=() => {
-		if (inside.value.textContent === "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"){
-	inside.classId.toggle(input2)
-		} else{
-	inside.classId.toggle(input)
-		}
-}
-
-const handleClick = (e) =>{
-  return
-	myFunction();
-}
-  </script>
+	</body>
+	<script src="index.js"></script>
 </html>
