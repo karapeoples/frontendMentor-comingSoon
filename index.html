@@ -40,9 +40,9 @@
 							with announcements and our launch deals.
 						</p>
 					</section>
-					<form>
-						<input require={myFunction} placeholder="Email Address" type="email" value="" class="input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
-						<button class="button" /><img src="./images/icon-arrow.svg" alt="submit" class="submit" /></button>
+					<form >
+						<input require placeholder="Email Address" type="email" value=' '} class="input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+						<button class="button" onClick={handleClick}><img src="./images/icon-arrow.svg" alt="submit" class="submit" /></button>
 					</form>
 				</div>
 			</div>
@@ -56,10 +56,21 @@
 		</section>
   </body>
   <script>
+	const inside=document.getElementByTagName('input');
+	const input = document.getElementById('#text1');
+	const input2 = document.getElementById('#text2');
     
-   const myFunction=() => {
-     return
-    src='./images/icon-error.svg';
+  const  myFunction=() => {
+		if (inside.value.textContent === "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"){
+	inside.classId.toggle(input2)
+		} else{
+	inside.classId.toggle(input)
+		}
+}
+
+const handleClick = (e) =>{
+  return
+	myFunction();
 }
   </script>
 </html>
